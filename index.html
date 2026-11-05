@@ -1,6 +1,59 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prompt Mommy</title></head>
-<body style="font-family:-apple-system,'Segoe UI',sans-serif;max-width:60ch;margin:48px auto;padding:0 16px">
-<h1>Prompt Mommy</h1><p>AI image prompt guides on Instagram: @promptmommy.</p>
-<p><a href="privacy.html">Privacy Policy</a></p></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt Mommy</title>
+<meta name="description" content="AI image prompts, before and after. Comment the keyword on any post and get the prompts in your DMs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root {
+  --bg: #fbf9fb; --fg: #23202a; --muted: #645e6e; --rule: #e6e0e8; --accent: #b0306f; --panel: #f3eef4; --on-accent: #ffffff;
+  --display: "Fraunces", Georgia, serif;
+  --body: "Source Sans 3", -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --bg: #17151b; --fg: #ece8ef; --muted: #a59eae; --rule: #2f2b36; --accent: #f07ab3; --panel: #211e27; --on-accent: #17151b; color-scheme: dark } }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 18px/1.6 var(--body);
+  padding: 0 max(20px, env(safe-area-inset-right)) 0 max(20px, env(safe-area-inset-left));
+  display: flex; flex-direction: column; }
+main { flex: 1; width: 100%; max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; gap: 28px; padding-block: 72px 48px; }
+.handle { font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0; }
+h1 { font: 600 clamp(44px, 10vw, 76px)/1.02 var(--display); margin: 0; letter-spacing: -0.01em; }
+h1 em { color: var(--accent); }
+.lede { font-size: clamp(19px, 2.6vw, 22px); color: var(--muted); margin: 0; max-width: 34ch; }
+.steps { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 12px; }
+.steps li { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: baseline; }
+.steps b { font: 600 22px/1 var(--display); color: var(--accent); }
+.cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.btn { display: inline-block; padding: 12px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 16px; }
+.btn.primary { background: var(--accent); color: var(--on-accent); }
+.btn.ghost { border: 1.5px solid var(--rule); color: var(--fg); }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+footer { width: 100%; max-width: 640px; margin: 0 auto; border-top: 1px solid var(--rule); padding-block: 20px 28px; font-size: 14px; color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <p class="handle">@promptmommy</p>
+  <h1>Prompt <em>Mommy</em></h1>
+  <p class="lede">AI image prompts that turn an everyday photo into the after shot. New prompt drops every day on Instagram.</p>
+  <ol class="steps">
+    <li><b>1</b><span>Find a before and after you love on our page.</span></li>
+    <li><b>2</b><span>Comment the keyword on the post.</span></li>
+    <li><b>3</b><span>Get the prompts and tools sent to your DMs.</span></li>
+  </ol>
+  <div class="cta">
+    <a class="btn primary" href="https://www.instagram.com/promptmommy/">Follow on Instagram</a>
+    <a class="btn ghost" href="privacy.html">Privacy Policy</a>
+  </div>
+</main>
+<footer>
+  <span>© 2026 Prompt Mommy</span>
+  <a href="privacy.html">Privacy Policy</a>
+</footer>
+</body>
+</html>
